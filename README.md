@@ -1,0 +1,3 @@
+# WebforceWP
+
+composer install
