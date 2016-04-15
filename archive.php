@@ -7,8 +7,20 @@
 				<?php endif; ?>
 				<div class="col-md-<?php echo 12/$display ?>">
 					<?php the_terms($post->ID, 'marque') ?>
+
 					<h1><a href="<?php the_permalink() ?>"><?php the_title() ?></a></h1>
+
+					<?php if(has_post_thumbnail()):
+						$src = wp_get_attachment_image_src(get_post_thumbnail_id(), 'thumbnail')[0]; ?>
+						<img src="<?php echo $src ?>" alt="" />
+					<?php endif; ?>
+
+					<?php if(get_post_meta($post->ID, 'prix', true)): ?>
+						<p>Prix : <?php echo get_post_meta($post->ID, 'prix', true) ?></p>
+					<?php endif; ?>
+
 					<div><?php the_content() ?></div>
+
 				</div>
 				<?php if($count%$display == 0 || $count == $total): ?>
 					</div>

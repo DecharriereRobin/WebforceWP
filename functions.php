@@ -55,7 +55,8 @@ function webforce_custom_init(){
 	$args = array(
 		'public' => true,
 		'label' => 'Voitures',
-		'has_archive' => true
+		'has_archive' => true,
+		'supports' => array('title', 'editor', 'thumbnail', 'custom-fields', 'revisions')
 	);
 	register_post_type('voiture', $args);
 	register_taxonomy(
