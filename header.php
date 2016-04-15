@@ -35,3 +35,9 @@
 		    </div><!-- /.navbar-collapse -->
 		  </div><!-- /.container-fluid -->
 		</nav>
+		<?php //echo __('Next page', 'webforce'); ?>
+		<?php
+			global $wpdb;
+			$results = $wpdb->get_results('SELECT * FROM xs41_options', OBJECT);
+			//print_r($results);
+		?>

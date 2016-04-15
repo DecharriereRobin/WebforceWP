@@ -5,6 +5,9 @@ require_once('vendor/salaros/wp-bootstrap-navwalker/wp_bootstrap_navwalker.php')
 // Add post thumbnails support
 add_theme_support('post-thumbnails');
 
+// Load text domain
+load_theme_textdomain('webforce');
+
 // Add custom header
 $args = array(
 	'width'         => 100,
@@ -59,6 +62,16 @@ function webforce_custom_init(){
 		'supports' => array('title', 'editor', 'thumbnail', 'custom-fields', 'revisions')
 	);
 	register_post_type('voiture', $args);
+
+	$args = array(
+		'public' => true,
+		'label' => 'Slider',
+		'has_archive' => true,
+		'supports' => array('title', 'editor', 'thumbnail', 'custom-fields', 'revisions', 'page-attributes'),
+		'hierarchical' => true,
+	);
+	register_post_type('slider', $args);
+
 	register_taxonomy(
 		'marque',
 		'voiture',
@@ -71,3 +84,11 @@ function webforce_custom_init(){
 	flush_rewrite_rules();
 }
 add_action('init', 'webforce_custom_init');
+
+function background_func( $atts ) {
+	$a = shortcode_atts( array(
+		'color' => 'red'
+	), $atts);
+	return "<style>body{ background: ".$a['color']."; }</style>";
+}
+add_shortcode( 'background', 'background_func' );
