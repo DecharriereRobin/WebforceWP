@@ -1,0 +1,13 @@
+{
+    "name": "webforce/webforcewp",
+    "authors": [
+        {
+            "name": "Matthieu Mota",
+            "email": "matthieumota@gmail.com"
+        }
+    ],
+    "require": {
+        "components/bootstrap": "^3.3",
+        "salaros/wp-bootstrap-navwalker": "^2.1"
+    }
+}
