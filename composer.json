@@ -6,24 +6,23 @@
             "email": "matthieumota@gmail.com"
         }
     ],
-    "repositories": {
-        "wp-bootstrap-navwalker": {
-            "type": "package",
-            "package": {
-                "name": "twittem/wp-bootstrap-navwalker",
-                "version": "1.0.0",
-                "source": {
-                    "url": "https://github.com/twittem/wp-bootstrap-navwalker",
-                    "type": "git",
-                    "reference": "master"
-                },
-                "minimum-stability": "dev"
-            }
-        }
-    },
+    "repositories": [
+	    {
+	        "type":"package",
+	        "package": {
+	          "name": "twittem/wp-bootstrap-navwalker",
+	          "version":"master",
+	          "source": {
+	              "url": "https://github.com/twittem/wp-bootstrap-navwalker",
+	              "type": "git",
+	              "reference":"master"
+	            }
+	        }
+	    }
+	],
     "require": {
         "components/bootstrap": "^3.3",
-        "wp-bootstrap-navwalker": "*"
+        "twittem/wp-bootstrap-navwalker": "master"
     },
     "minimum-stability": "dev"
 }

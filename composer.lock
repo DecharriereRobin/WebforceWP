@@ -4,12 +4,12 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "5751238bc9edb5cc489bb3b70847df47",
-    "content-hash": "b90f1054bfd3165d77543b426fd10c69",
+    "hash": "6f5e519f31c0bb86b16a703f3014d5d3",
+    "content-hash": "9e854e9eb94f11e24dc7d1b8f85c5cfe",
     "packages": [
         {
             "name": "components/bootstrap",
-            "version": "3.3.6",
+            "version": "3.x-dev",
             "source": {
                 "type": "git",
                 "url": "https://github.com/components/bootstrap.git",
@@ -118,61 +118,20 @@
             "time": "2016-02-24 08:16:25"
         },
         {
-            "name": "salaros/wp-bootstrap-navwalker",
-            "version": "2.1.0",
+            "name": "twittem/wp-bootstrap-navwalker",
+            "version": "master",
             "source": {
                 "type": "git",
-                "url": "https://github.com/salaros/wp-bootstrap-navwalker.git",
-                "reference": "5176215a022bf44ee11c97efb2c1c2d919086520"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/salaros/wp-bootstrap-navwalker/zipball/5176215a022bf44ee11c97efb2c1c2d919086520",
-                "reference": "5176215a022bf44ee11c97efb2c1c2d919086520",
-                "shasum": ""
-            },
-            "suggest": {
-                "johnpbloch/wordpress": "So you can start using menu walker",
-                "twbs/bootstrap": "Bootstrap for your theme which features navbar"
+                "url": "https://github.com/twittem/wp-bootstrap-navwalker",
+                "reference": "master"
             },
             "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Salaros\\Wordpress\\": "./"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "GPL-2.0+"
-            ],
-            "authors": [
-                {
-                    "name": "Edward McIntyre",
-                    "email": "edward@edwardmcintyre.com",
-                    "homepage": "http://twitter.com/twittem",
-                    "role": "Creator"
-                },
-                {
-                    "name": "Zhmayev Yaroslav",
-                    "email": "salaros@salaros.com",
-                    "homepage": "http://salaros.com",
-                    "role": "Contributor"
-                }
-            ],
-            "description": "A custom WordPress nav walker class to fully implement the Twitter Bootstrap 3.0+ navigation style in a custom theme using the WordPress built in menu manager.",
-            "homepage": "https://github.com/salaros/wp-bootstrap-navwalker",
-            "keywords": [
-                "bootstrap",
-                "menu",
-                "navbar",
-                "wordpress"
-            ],
-            "time": "2015-06-29 10:12:20"
+            "time": "2014-02-26 21:27:06"
         }
     ],
     "packages-dev": [],
     "aliases": [],
-    "minimum-stability": "stable",
+    "minimum-stability": "dev",
     "stability-flags": [],
     "prefer-stable": false,
     "prefer-lowest": false,
